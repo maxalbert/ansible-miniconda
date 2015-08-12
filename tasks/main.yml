@@ -26,3 +26,10 @@
         {{ item.pkgs }}'
     when: miniconda_venv_created|success
     with_items: miniconda_environments
+
+  - name: Add miniconda dir to PATH in ~/.bashrc
+    lineinfile:
+      dest: ~/.bashrc
+      line: "export PATH={{ miniconda_path }}/bin:$PATH"
+      state: present
+    when: add_miniconda_dir_to_path
