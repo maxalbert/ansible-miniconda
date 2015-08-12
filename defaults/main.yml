@@ -1,10 +1,10 @@
 ---
 # vars file for miniconda
 miniconda_installer:
-  url: 'http://repo.continuum.io/miniconda'
-  file: 'Miniconda3-3.0.0-Linux-x86_64.sh'
+  url: 'https://repo.continuum.io/miniconda'
+  file: 'Miniconda3-latest-Linux-x86_64.sh'
 
-miniconda_path: '~/.miniconda'
+miniconda_path: '~/miniconda'
 
 miniconda_environments: []
 # conda_venvs:
