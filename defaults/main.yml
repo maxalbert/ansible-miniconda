@@ -7,9 +7,10 @@ miniconda_installer:
 miniconda_path: '~/miniconda'
 
 miniconda_environments: []
-# conda_venvs:
+# miniconda_environments:
 #   - name: my_virtual_env
 #     python_version: 2.7
 #     pkgs: 'pip pyyaml numpy'
+#     activate: yes
 
 add_miniconda_dir_to_path: True

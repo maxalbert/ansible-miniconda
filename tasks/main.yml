@@ -33,3 +33,11 @@
       line: "export PATH={{ miniconda_path }}/bin:$PATH"
       state: present
     when: add_miniconda_dir_to_path
+
+  - name: Activate conda environments if requested
+    lineinfile:
+      dest: ~/.bashrc
+      line: "source activate {{ item.name }}"
+      state: present
+    when: item.activate
+    with_items: miniconda_environments
