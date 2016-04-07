@@ -1,4 +1,4 @@
-Ansible-Miniconda
+/Ansible-Miniconda
 ========
 
 Install miniconda and create conda virtual environments with packages installed.
@@ -8,7 +8,7 @@ Role Variables
 
 Example variables for conda environments:
 ```
-miniconda_path: /home/user_name/.miniconda
+miniconda_path: /home/user_name/miniconda
 miniconda_environments:
   - name: virtual_env_name
     python_version: 2.7
@@ -22,7 +22,7 @@ miniconda_environments:
 
 Default variables (in vars/main.yml):
 * miniconda installer to use: url and installer script name
-* miniconda path: defaults to `~/.miniconda` (but may not work properly)
+* miniconda path: defaults to `~/miniconda` (but may not work properly)
 
 License
 -------
