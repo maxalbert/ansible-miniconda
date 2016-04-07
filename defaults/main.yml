@@ -12,5 +12,6 @@ miniconda_environments: []
 #     python_version: 2.7
 #     pkgs: 'pip pyyaml numpy'
 #     activate: yes
+#     extra_args: ''
 
 add_miniconda_dir_to_path: True
